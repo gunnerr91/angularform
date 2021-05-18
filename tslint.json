@@ -1,9 +1,10 @@
 {
-  "extends": "tslint:recommended",
+  "extends": ["tslint:recommended", "tslint-config-prettier"],
   "rulesDirectory": [
     "codelyzer"
   ],
   "rules": {
+    "prettier": [true, ".prettierrc"],
     "align": {
       "options": [
         "parameters",
@@ -43,6 +44,7 @@
         ]
       }
     ],
+    "no-trailing-comma": true,
     "no-console": [
       true,
       "debug",
